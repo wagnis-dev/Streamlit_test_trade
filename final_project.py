@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pandas_datareader.data as pdr
+from pandas_datareader import data as pdr
 import plotly.express as px
 import numpy as np
 from PIL import Image
@@ -214,4 +214,5 @@ if __name__=="__main__":
                 ⚠️pour l’entreprise sélectionnée, ainsi que son évolution entre le 31 décembre 2014 et le 31 décembre 2024. ⚠️ 
 
             """)
+
 
