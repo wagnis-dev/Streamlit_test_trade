@@ -78,7 +78,7 @@ def filterinf(df, sector_default_val, cap_default_val, option_sector, cap_value,
 # Creation de la methode d'import de données
 @st.cache_data
 def read_data():
-    my_path = "udemy_streamlit/initial_version/project/s&p500.csv"
+    my_path = "s&p500.csv"
     df = pd.read_csv(my_path)
     return df
 
@@ -145,7 +145,7 @@ if __name__=="__main__":
     # mettre un titre à notre sidebar 
     st.sidebar.title("Search critera")
     # mettre une image dans notre page
-    image = Image.open('udemy_streamlit/initial_version/project/stock.jpeg')
+    image = Image.open('stock.jpeg')
     # mettre une image au centre de la page en utilisant des colonnes
     _, col_image_2, _ = st.columns([1,3,1])
     with col_image_2:
@@ -212,4 +212,5 @@ if __name__=="__main__":
                 L’indicateur situé à gauche affiche la valeur du cours de l’action au 31 décembre 2024 
                 
                 ⚠️pour l’entreprise sélectionnée, ainsi que son évolution entre le 31 décembre 2014 et le 31 décembre 2024. ⚠️ 
+
             """)
